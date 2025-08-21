@@ -17,7 +17,7 @@ services:
       KC_HOSTNAME: ${KC_HOSTNAME}
       KC_HTTP_ENABLED: "false"
     volumes:
-      - ./certs:/etc/x509/https
+      - ./certs:/etc/x509/https:ro
       - keycloak_data:/opt/keycloak/data
     command:
       - start
